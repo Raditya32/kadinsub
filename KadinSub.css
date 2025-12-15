@@ -2182,7 +2182,13 @@ footer::before {
     /* Tablet & Mobile */
     @media (max-width: 1023px) {
       body {
-        padding: 0.01rem 0.009rem;
+        padding: 0.5px 0.5px;
+      }
+
+      .hero-actions{
+        flex-direction: flex;
+        align-items: stretch;
+        gap: 0.5rem;
       }
 
       h1 {

@@ -1712,7 +1712,7 @@ footer::before {
       .hero{grid-template-columns: 1fr 1fr; gap:18px;padding:18px; margin-top: 60px;}
       .hero-title{font-size:44px}
       .nav{padding:0 12px; height: 60px;}
-      .brand .text{font-size:16px}
+      .brand .text{font-size:12px}
       .grid-3{grid-template-columns: 1fr 1fr}
     }
     @media (max-width:820px){

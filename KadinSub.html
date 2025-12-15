@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" 
+        content="
+          default-src 'self' https:;
+          script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://maps.gstatic.com https://www.google.com;
+          style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maps.googleapis.com https://www.google.com;
+          img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://www.google.com;
+          font-src 'self' https://fonts.gstatic.com;
+          connect-src 'self' https://maps.googleapis.com https://www.google.com;
+          frame-src https://www.google.com https://www.google.co.id https://maps.google.com;
+          object-src 'none';">
+  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+  <meta http-equiv="Pragma" content="cache">
+  <meta http-equiv="Expires" content="31536000">
+  <title>KadinSub</title>
+  <link rel="icon" href="pict/Logo Kadin Surabaya.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="KadinSub.css">
+</head>
+<body>
+  <script src="KadinSub.js"></script>
+  <header>
+    <div class="nav">
+      <div class="brand" aria-label="KADIN Surabaya Home">
+        <div class="logo"><img src="pict/Logo Kadin Surabaya.png" class="img-fluid" alt=""></div>
+        <div class="text">Kamar Dagang dan Industri Surabaya</div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Buka menu" id="menuBtn">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#anggota">Keanggotaan</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#pengurus">Pengurus</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#tentang">Tentang</a>
+      <a href="#anggota">Keanggotan</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#program">Program</a>
+      <a href="#pengurus">Pengurus</a>
+      <a href="#kontak" >Kontak</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" role="region" aria-label="Hero section — Kadin Surabaya">
+      <div class="hero-left">
+        <h1 class="hero-title">Mendorong Kolaborasi dan Pertumbuhan Ekonomi Surabaya</h1>
+        <p class="hero-desc">
+          Website KADIN Surabaya dirancang sebagai platform resmi Kamar Dagang dan Industri Kota Surabaya yang berfungsi sebagai pusat informasi, komunikasi, dan kolaborasi bagi para pengusaha. Melalui website ini, KADIN Surabaya berkomitmen untuk mendukung inovasi, mendorong pertumbuhan ekonomi daerah, serta memperkuat daya saing pelaku usaha di Surabaya.
+        </p><br>
+
+        <h3 style="margin:8px 0 6px">AD/ART dan Peraturan Organisasi</h3><br>
+        <div class="hero-actions">
+          <button class="btn-primary" id="downloadBtn">AD/ART</button>
+          <a class="btn-ghost" href="https://www.kadinindonesia.or.id/peraturan-organisasi">Peraturan Organisasi</a>
+        </div>
+
+      </div>
+      <div class="hero-right" aria-hidden="false">
+        <img class="hero-img" src="pict/kadin.jpg" alt="Tim bekerja bersama — ilustrasi KADIN Surabaya">
+      </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="section" aria-label="Tentang Kami">
+      <span class="pill">Tentang Kami</span>
+      <h2>Sejarah Kadin Indonesia</h2><br>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slides" id="slides">  
+            <!-- Slide 1 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide1-mobile.png">
+                <img src="pict/slide1.png" alt="Slide 1">
+              </picture>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide2-mobile.png">
+                <img src="pict/slide2.png" alt="Slide 2">
+              </picture>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide3-mobile.png">
+                <img src="pict/slide3.png" alt="Slide 3">
+              </picture>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide4-mobile.png">
+                <img src="pict/slide4.png" alt="Slide 4">
+              </picture>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide5-mobile.png">
+                <img src="pict/slide5.png" alt="Slide 5">
+              </picture>
+            </div>
+            
+            <!-- Slide 6 -->
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide6-mobile.png">
+                <img src="pict/slide6.png" alt="Slide 6">
+              </picture>
+            </div>
+
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide7-mobile.png">
+                <img src="pict/slide7.png" alt="Slide 7">
+              </picture>
+            </div>
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide8-mobile.png">
+                <img src="pict/slide8.png" alt="Slide 8">
+              </picture>
+            </div>
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide9-mobile.png">
+                <img src="pict/slide9.png" alt="Slide 9">
+              </picture>
+            </div>
+            <div class="slide">
+              <picture>
+                <source media="(max-width: 768px)" srcset="pict/slide10-mobile.png">
+                <img src="pict/slide10.png" alt="Slide 10">
+              </picture>
+            </div>
+          </div>
+          
+          <div class="dots" id="dots"></div>
+        </div>
+      </div><br>
+
+      <div class="grid grid-8">
+        <div class="card">
+          <h3 style="margin:8px 0 6px">Dasar Hukum</h3>
+          <div class="law-box">
+            <strong>UU No. 1 Tahun 1987 tentang Kamar Dagang dan Industri</strong><br>
+            <span class="muted">sebagai landasan struktural, merupakan dasar hukum utama yang mengatur pembentukan, tujuan, fungsi, dan peran Kadin sebagai wadah bagi pengusaha Indonesia dan ditetapkan sebagai satu-satunya organisasi Kamar Dagang dan Industri.</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:8px 0 6px">Kiprah Ketua Umum Kamar Dagang dan Industri Surabaya</h3>
+          <div class="timeline">
+            <div class="item"><strong>Gagasan:</strong> Menguatkan peran generasi muda dan profesional dalam membangun ekosistem bisnis dan sosial yang berdaya saing.</div>
+            <div class="item"><strong>Inisiatif:</strong> Aktif di berbagai organisasi seperti Pemuda Pancasila, HIPMI, KONI, dan Pemprov Wushu Jatim, serta berkontribusi dalam kegiatan sosial dan keagamaan.</div>
+            <div class="item"><strong>Program:</strong> Berperan sebagai Tenaga Ahli Kementerian Komunikasi dan Infrastruktur RI serta memimpin sejumlah perusahaan di berbagai sektor.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="anggota" class="anggota">
+    <span class="pill">Keanggotaan</span>
+    <div class="container">
+    <h1>Jenis & Manfaat Keanggotaan</h1>
+    
+    <div class="content-wrapper">
+      <!-- Tabs Sidebar -->
+      <div class="tabs-container">
+        <button class="tab-button active" onclick="showTab('ab')">
+          Anggota Biasa (AB)
+        </button>
+        <button class="tab-button" onclick="showTab('mikro')">
+          Anggota Usaha Mikro dan Ultra Mikro
+        </button>
+        <button class="tab-button" onclick="showTab('alb')">
+          Anggota Luar Biasa (ALB)
+        </button>
+        <button class="tab-button" onclick="showTab('albt')">
+          Anggota Luar Biasa Tercatat (ALBT)
+        </button>
+        <button class="tab-button" onclick="showTab('mnft')">
+          Manfaat Menjadi Anggota KADIN Indonesia
+        </button>
+      </div>
+
+      <!-- Content Panel -->
+      <div class="content-panel">
+        <!-- Tab 1: Anggota Biasa (AB) -->
+        <div class="tab-content active" id="ab">
+          <h2>Anggota Biasa (AB)</h2>
+          <p>Pengusaha Indonesia atau Perusahaan.</p>
+          <ul>
+            <li><strong>Pengusaha</strong> adalah setiap orang perseorangan atau persekutuan atau badan hukum yang menjalankan suatu jenis Perusahaan.</li>
+            <li><strong>Perusahaan</strong> adalah setiap bentuk usaha yang menjalankan setiap jenis usaha yang bersifat tetap dan terus-menerus, didirikan, bekerja, dan berkedudukan di dalam wilayah negara Republik Indonesia serta bertujuan memperoleh keuntungan atau manfaat dan atau laba.</li>
+          </ul>
+        </div>
+
+        <!-- Tab 2: Anggota Usaha Mikro dan Ultra Mikro -->
+        <div class="tab-content" id="mikro">
+          <h2>Anggota Usaha Mikro dan Ultra Mikro</h2>
+          <ul>
+            <li><strong>Anggota Kadin</strong> di luar dari Anggota Biasa (AB) dan Anggota Luar Biasa (ALB) yang terdiri dari Pengusaha Indonesia atau Perusahaan yang oleh peraturan perundang-undangan ditentukan statusnya sebagai Usaha Mikro dan Ultra Mikro.</li>
+          </ul>
+        </div>
+
+        <!-- Tab 3: Anggota Luar Biasa (ALB) -->
+        <div class="tab-content" id="alb">
+          <h2>Anggota Luar Biasa (ALB)</h2>
+          <p>Organisasi Pengusaha dan Organisasi Perusahaan.</p>
+          <ul>
+            <li>Organisasi Pengusaha dengan sebutan Himpunan, Ikatan, Dewan Bisnis, Dewan Kerja Sama Bisnis, atau nama apa pun yang serupa, adalah wadah persatuan dan kesatuan para Pengusaha Indonesia, yang didirikan secara sah berdasarkan ketentuan peraturan perundang-undangan yang berlaku atas dasar kesamaan tujuan, aspirasi, strata kepengusahaan, atau ciri-ciri alamiah tertentu, atau wadah konsultasi dan komunikasi antara Pengusaha Indonesia dengan Pengusaha asing dari suatu negara, bersifat internasional, nasional atau daerah yang dalam kegiatannya bersifat nirlaba, dan memiliki Anggaran Dasar dan Anggaran Rumah Tangga yang sejalan dengan Undang-Undang Nomor 1 Tahun 1987 tentang Kamar Dagang dan Industri.</li>
+            <li>Organisasi Perusahaan dengan sebutan Asosiasi, Gabungan, atau nama apapun yang serupa, adalah wadah persatuan dan kesatuan dari Perusahaan-Perusahaan Badan Usaha Milik Negara, Badan Usaha Milik Daerah, Badan Usaha Koperasi maupun Badan Usaha Swasta, atau wadah komunikasi dan konsultasi antara Perusahaan Indonesia dan Pengusaha berbadan hukum asing dari sesuatu negara, yang didirikan secara sah berdasarkan ketentuan peraturan perundang-undangan yang berlaku atas dasar kesamaan jenis usaha, mata dagangan atau jasa yang dihasilkan atau yang diperdagangkan, bersifat nasional ataupun daerah, yang dalam kegiatannya bersifat nirlaba, dan memiliki Anggaran Dasar dan Anggaran Rumah Tangga yang sejalan dengan Undang-undang Nomor 1 Tahun 1987 tentang Kamar Dagang dan Industri.</li>
+          </ul>
+        </div>
+
+        <!-- Tab 4: Anggota Luar Biasa Tercatat (ALBT) -->
+        <div class="tab-content" id="albt">
+          <h2>Anggota Luar Biasa Tercatat (ALBT)</h2>
+          <ul>
+            <li><strong>Gabungan Anggota</strong>  Luar Biasa (ALB) tingkat nasional yang belum mempunyai hak dan kewajiban sebagai ALB.</li>
+          </ul>
+        </div>
+        <!-- Tab 5: Manfaat jadi keanggotaan kadin surabaya -->
+        <div class="tab-content" id="mnft">
+          <h2>Manfaat Menjadi Anggota KADIN Indonesia</h2>
+          <ul>
+            <li>Menjadi bagian dari ekosistem bisnis di Indonesia</li>
+            <li>Akses prioritas memperluas networking lokal dan luar negeri</li>
+            <li>Akses prioritas mendapatkan dukungan advokasi dan layanan bantuan hukum</li>
+            <li>Akses prioritas mengembangkan kapasitas sebagai pengusaha melalui berbagai platform Kadin</li>
+            <li>Mendapatkan update informasi perekonomian, event dan peluang bisnis</li>
+            <li>Kemudahan akses layanan dokumen bisnis, seperti Certificate of Origin (COO), ATA Carnet, APEC Business Travel Card, Rekomendasi Visa, Surat Keterangan Kinerja Baik, dll.</li>
+            <li>Akses direktori perusahaan dan asosiasi bisnis anggota Kadin Indonesia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+    
+    
+    <!-- LAYANAN -->
+    <section id="layanan" class="section" aria-label="Layanan Kadin">
+      <span class="pill">Layanan</span>
+      <h2>Layanan KADIN Surabaya</h2>
+      <p class="lead">Kemudahan layanan untuk mendukung aktivitas usaha dan perdagangan.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Daftar Keanggotaan</h3>
+          <p class="muted">Pendaftaran & manajemen keanggotaan KADIN.</p><br>
+          <a class="btn" href="https://anggota.kadinindonesia.id" target="_blank" rel="noopener">Buka Portal Anggota</a>
+        </div>
+
+        <div class="card">
+          <h3>Sertifikat Badan Usaha</h3>
+          <ul class="list-clean muted">
+            <li>• Syarat dokumen (AKTA, NPWP, dsb.)</li>
+            <li>• Alur verifikasi</li>
+            <li>• Waktu proses & biaya</li>
+          </ul><br>
+          <a class="btn" id="downloadbtn">Persyaratan Pengisian</a>
+        </div>
+
+        <div class="card">
+          <h3>Persaratan Pengurusan APEC Business Travel Card</h3>
+          <ul class="list-clean muted">
+            <li>• KTP pemohon</li>
+            <li>• NIB perusahaan</li>
+            <li>• NPWP perusahaan Dan NPWP Pemohon</li>
+            <li>• SK menkumham (di Akte)</li>
+            <li>• KTA KADIN yg masih aktif</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Sertifikat Asuransi Impor (PIB)</h3>
+          <p class="muted">Layanan e-cargo KADIN Surabaya untuk kepabeanan.</p><br>
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfO8sqQmZlVI6Z7tt0ToPlSbJwa03nWJiVeFpk8wdOotme9rA/viewform" target="_blank" rel="noopener">Buka e-Cargo</a>
+        </div>
+
+        <div class="card">
+          <h3>Certificate of Origin / SKA</h3>
+          <ul class="list-clean muted">
+            <li>• Persyaratan HS Code</li>
+            <li>• Formulir & verifikasi</li>
+            <li>• Pengambilan dokumen</li>
+          </ul><br>
+          <a class="btn" id="downloadbttn">Panduan SKA</a>
+        </div>
+
+        <div class="card">
+          <h3>Konsultasi Bisnis</h3>
+          <p class="muted">Akses jejaring, pendampingan ekspor, dan kemitraan industri.</p><br>
+          <a class="btn" href="https://patroneoy.com/kadin/">Dapatkan Bantuan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM -->
+    <section id="program" class="section" aria-label="Program Kadin Surabaya" style="background:var(--bg)">
+      <span class="pill">Program</span>
+      <h2>Program Prioritas Kadin Surabaya</h2>
+      <p class="lead">Quick wins serta visi & misi yang mendorong pertumbuhan ekonomi daerah.</p>
+
+      <div class="grid grid-8">
+        <div class="card">
+          <h3>Quick Wins</h3>
+          <ul class="list-clean">
+            <li><strong>1.</strong> Program Iklim Usaha Sehat — <span class="muted">Menjaga usaha, industri, dan investasi di Surabaya agar tetap sehat dan sesuai aturan.</span></li>
+            <li><strong>2.</strong> Program Penguatan SDM Lokal — <span class="muted">Mengembangkan SDM lokal dengan keterampilan yang dibutuhkan industri.</span></li>
+            <li><strong>3.</strong> Program Optimalisasi Industri TKDN — <span class="muted">Mendorong industri berbasis TKDN untuk memanfaatkan potensi lokal.</span></li>
+            <li><strong>4.</strong> Program Penguatan UMKM Digital — <span class="muted">Memperkuat UMKM lewat digitalisasi dan pengelolaan terpadu agar lebih bersaing.</span></li>
+            <li><strong>5.</strong> Program Kadin Net Zero Hub — <span class="muted">Mendukung target pemerintah mencapai nol emisi pada 2060.</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Visi & Misi</h3>
+          <p class="muted"><strong>Visi:</strong> Membangun usaha Surabaya yang kuat, berbasis potensi lokal, dan berperan dalam ekonomi nasional dengan menjunjung hukum, etika, serta lingkungan.</p>
+          <ul class="list-clean muted">
+            <li>• <strong>Misi 1:</strong> Membina dan mengembangkan pengusaha di sektor negara, koperasi, dan swasta, serta menyeimbangkan potensi ekonomi Surabaya antara usaha besar, kecil, dan berbagai wilayah.</li>
+            <li>• <strong>Misi 2:</strong> Mewujudkan iklim usaha yang inovatif, kompetitif, dan kolaboratif untuk mendorong peran aktif dunia usaha dalam pembangunan ekonomi nasional serta pengembangan profesional Kadin dari pusat hingga daerah.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pengurus" class="section" aria-label="Pengurus Kadin Surabaya">
+      <span class="pill">Kepengurusan</span>
+          <h2>Susunan Kepengurusan KADIN Surabaya 2025 - 2030</h2>
+          <p class="lead">Tim profesional yang berdedikasi untuk kemajuan bisnis di Surabaya</p>
+      
+      <div class="ketua-card">
+      <div class="ketua-photo">
+        <img src="pict/ketua.png" alt="Foto Ketua Umum">
+      </div>
+      <div class="ketua-info">
+        <span class="ketua-badge">KETUA UMUM</span>
+        <h2 class="ketua-nama">H.M. ALI AFFANDI LNM, S.M., M.MT</h2>
+        <p class="ketua-jabatan">Ketua Umum Kamar Dagang dan Industri Surabaya</p>
+      </div>
+    </div>
+
+    <!-- Daftar Pengurus Lainnya -->
+    <div class="pengurus-section">
+      <h3 class="pengurus-section-title">Pengurus Lainnya</h3>
+      <div class="pengurus-list">
+        
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">ARFA DAROJATI, S.Sos., M.Med.Kom</div>
+          <div class="pengurus-item-jabatan">Wakil Ketua Bidang Investasi, Keuangan & Perbankan</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">Medy Prakoso</div>
+          <div class="pengurus-item-jabatan">Wakil Ketua Bidang Perdagangan Barang, Jasa & Logistik</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">DIDIK PRASETYONO</div>
+          <div class="pengurus-item-jabatan">Kepala Badan Pengembangan Kawasan Industri dan Real Estate</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">FIERSA ERIK CHRISTIAN CAHYONO</div>
+          <div class="pengurus-item-jabatan">Kepala Badan Percepatan Logistik</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">FERRY SETIAWAN H.C., S.E</div>
+          <div class="pengurus-item-jabatan">Kepala Badan Pengembangan Pusat Perbelanjaan dan Restoran</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">MOCHAMMAD BADOWI, S.M., M.B.A</div>
+          <div class="pengurus-item-jabatan">Kepala Badan Riset dan Pengembangan</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">WIDIA PRITA ASTRIA</div>
+          <div class="pengurus-item-jabatan">Kepala Badan Hubungan Masyarakat dan Komunikasi</div>
+        </div>
+
+        <div class="pengurus-item">
+          <div class="pengurus-item-nama">ADAM SYARIEF THAMRIN, S.IIP.,M.PSDM</div>
+          <div class="pengurus-item-jabatan">Direktur Eksekutif Kamar Dagang dan Industri Kota Surabaya</div>
+        </div>
+
+      </div>
+    </div>
+    </section>
+    
+    <!-- KONTAK -->
+    <section id="kontak" class="section" aria-label="Kontak">
+      <span class="pill">Kontak</span>
+      <h2>Hubungi Kami</h2>
+      <p class="lead">Butuh bantuan layanan atau kerjasama? Kirimkan pertanyaan Anda.</p>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Informasi Tentang KADIN Surabaya</h3>
+          <ul class="list-clean">
+            <li><strong>Alamat:</strong><br>
+              Jalan Bukit Darmo Raya, Jl. Raya Graha Famili Tim. No.Kel No. 1,<br>
+              Pradahkalikendal, Kec. Dukuhpakis, Surabaya, Jawa Timur 60226
+            </li>
+            <li><strong>Telepon:</strong> (031) 7344657</li>
+            <li><strong>Email:</strong> kadinsurabayacity@gmail.com</li>
+            <li><strong>Jam Operasional:</strong> Senin - Jumat, 08.00 - 16.00 WIB</li>
+            <li><strong>Media Sosial:</strong><a class="ig" href="https://www.instagram.com/kadin.sub/?igsh=N3BhZGV2aTF1c3Nv#"> @kadin.sub (Instagram)</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Lokasi Kantor KADIN Surabaya</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.515307066232!2d112.6941106529107!3d-7.295852429948821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fc3830399ae3%3A0xe894eea6eb3f236a!2sKamar%20Dagang%20dan%20Industri%20(KADIN)%20-%20Provinsi%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1761708775682!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- chat bubble -->
+  <a href="https://wa.me/6287770751419?text=Halo%21%20saya%20butuh%20bantuan%20layanan%20Anda">
+    <div class="chat-bubble" role="status" aria-live="polite">
+      <img src="pict/download.jpg" alt="avatar">
+      <div>
+        <div class="chat-text">Punya Pertanyaan?</div>
+        <div class="chat-sub">Tinggalkan Pesan</div>
+      </div>
+    </div>   
+  </a>
+  
+  <footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="pict/logo kadin.jpg" alt="KADIN Logo">
+      <h3>Kamar Dagang dan Industri Surabaya</h3>
+      <p>KADIN Kota Surabaya</p>
+    </div>
+
+    <div class="footer-quick-contact">
+      <h4>Kontak Cepat</h4>
+      <p>Telepon: (031) 7344657</p>
+      <p>Email: kadinsurabayacity@gmail.com</p>
+      <p>Instagram: <a class="ig" href="https://www.instagram.com/kadin.sub">@kadin.sub</a></p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigasi</h4>
+      <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#berita">Berita</a></li>
+          <li><a href="#pengurus">Pengurus</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year">2025</span> Kamar Dagang dan Industri Surabaya. Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Kembali ke atas">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+</body>
+</html>

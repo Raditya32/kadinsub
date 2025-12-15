@@ -2182,7 +2182,7 @@ footer::before {
     /* Tablet & Mobile */
     @media (max-width: 1023px) {
       body {
-        padding: 2rem 1.5rem;
+        padding: 0.05rem 0.01rem;
       }
 
       h1 {

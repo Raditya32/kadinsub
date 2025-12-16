@@ -338,7 +338,7 @@ nav ul li:last-child {
       width:55px;
       height:55px;
       border-radius:10px;
-      background:linear-gradient(135deg,var(--accent),#fff);
+      background:#fff;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -1746,8 +1746,8 @@ footer::before {
       }
       
       .brand .logo {
-        width: 40px;
-        height: 40px;
+        width: 43px;
+        height: 43px;
       }
       
       .nav {
